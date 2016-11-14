@@ -17,8 +17,6 @@ Classe que adiciona mais funcionalidades a classe DateTime para tratamento de da
 **Pegando todos os feriados do ano de 2014.**
 ```sh
 <?php
-include './DateHour.php';
-
 echo '<pre>';
 print_r( DateHour::getRecess(2014) ); 
 ```
@@ -47,8 +45,6 @@ Array
 
 ```sh
 <?php
-include './DateHour.php';
-
 echo (DateHour::checkdate(2014, 01, 12)) ? 'Data válida' : 'Data inválida';
 ```
 
@@ -61,8 +57,6 @@ Data válida
 
 ```sh
 <?php
-include './DateHour.php';
-
 echo (DateHour::checkhour(23, 59, 59)) ? 'Hora válida' : 'Hora inválida';
 ```
 
@@ -75,7 +69,6 @@ Hora válida
 
 ```sh
 <?php
-include './DateHour.php';
 // A data atual do teste foi 19/12/2015 13:42
 echo DateHour::sumDayUseful(10)->format('d/m/Y H:i:s');
 ```
@@ -89,7 +82,6 @@ Resultado:
 
 ```sh
 <?php
-include './DateHour.php';
 echo DateHour::sumDayUseful(10, '2014-12-25')->format('d/m/Y H:i:s');
 ```
 
