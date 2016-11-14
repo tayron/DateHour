@@ -1,15 +1,14 @@
-# DateHour#
+## DateHour 1.0
 
 Classe que adiciona mais funcionalidades a classe DateTime para tratamento de data e hora.
 
 
 ## Recursos
-
   - Todos os recursos da classe DateTime
-  - checkdate($year, $day, $month)
-  - checkhour($hour, $minute, $second)
-  - sumDayUseful($dayToSum)
-  - getRecess($year)
+  - checkdate($year, $day, $month) - Verifica se uma data é válida
+  - checkhour($hour, $minute, $second) - Verifica se uma hora é válida
+  - sumDayUseful($dayToSum, $date) - Soma uma quantidade de dias a uma data
+  - getRecess($year) - Retorna uma lista de recessos de um determinado ano
 
 
 ## Tutorial
