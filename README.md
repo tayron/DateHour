@@ -3,21 +3,19 @@
 Classe que adiciona mais funcionalidades a classe DateTime para tratamento de data e hora.
 
 
-### Recursos implementados ###
+## Recursos
 
-* Todos os recursos da classe DateTime
-*  Implementado método checkdate($year, $day, $month)
-*  Implementado método checkhour($hour, $minute, $second)
-*  Implementado método sumDayUseful($dayToSum)
-*  Implementado método getRecess($year)
+  - Todos os recursos da classe DateTime
+  - checkdate($year, $day, $month)
+  - checkhour($hour, $minute, $second)
+  - sumDayUseful($dayToSum)
+  - getRecess($year)
 
 
-### Tutorial ###
+## Tutorial
 
 **Pegando todos os feriados do ano de 2014.**
-```
-#!php
-
+```sh
 <?php
 include './DateHour.php';
 
@@ -26,8 +24,7 @@ print_r( DateHour::getRecess(2014) );
 ```
 
 Resultado:
-```
-#!php
+```sh
 Array
 (
     [0] => 2014-01-01
@@ -48,8 +45,7 @@ Array
 
 **Verificando se uma data é válida:**
 
-```
-#!php
+```sh
 <?php
 include './DateHour.php';
 
@@ -57,15 +53,13 @@ echo (DateHour::checkdate(2014, 01, 12)) ? 'Data válida' : 'Data inválida';
 ```
 
 Resultado:
-```
-#!php
+```sh
 Data válida
 ```
 
 **Verificando se uma hora é válida:**
 
-```
-#!php
+```sh
 <?php
 include './DateHour.php';
 
@@ -73,15 +67,13 @@ echo (DateHour::checkhour(23, 59, 59)) ? 'Hora válida' : 'Hora inválida';
 ```
 
 Resultado:
-```
-#!php
+```sh
 Hora válida
 ```
 
 **Somando 10 dias à data atual:**
 
-```
-#!php
+```sh
 <?php
 include './DateHour.php';
 // A data atual do teste foi 19/12/2015 13:42
@@ -89,22 +81,19 @@ echo DateHour::sumDayUseful(10)->format('d/m/Y H:i:s');
 ```
 
 Resultado:
-```
-#!php
+```sh
 29/12/2014 14:13:42
 ```
 
 **Somando 10 dias à data específica:**
 
-```
-#!php
+```sh
 <?php
 include './DateHour.php';
 echo DateHour::sumDayUseful(10, '2014-12-25')->format('d/m/Y H:i:s');
 ```
 
 Resultado:
-```
-#!php
+```sh
 29/12/2014 14:19:14
 ```

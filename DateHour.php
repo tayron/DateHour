@@ -1,9 +1,8 @@
 <?php 
 /**
- * Class for handling of date and time
+ * Classe que adiciona mais funcionalidades a classe DateTime para tratamento de data e hora.
  * 
  * @author Tayron Miranda <dev@tayron.com.br>
- * @since 09/07/2014 - 08:29
  */
 class DateHour extends DateTime {
  
@@ -18,11 +17,11 @@ class DateHour extends DateTime {
      *   echo DateHour::checkdate(2014, 01, 12);
      * </code>
      * </pre>
-     * 
-     * @access static          
-     * @param int $year  Year in number     
-     * @param int $day   Day in number
+     *     
+     * @param int $year Year in number     
+     * @param int $day Day in number
      * @param int $month Month in number
+     * 
      * @return boolean
      */
     public static function checkdate($year, $day, $month) {
@@ -50,9 +49,11 @@ class DateHour extends DateTime {
      * @param type $hour Hour of 0 at 23
      * @param type $minute Minute of 0 at 59
      * @param type $second Secunde of 0 at 59     
+     * 
      * @throws Exception First parameter must be an integer and positive', 
      * second parameter must be an integer and positive', 
      * Third parameter should be an integer and positive'
+     * 
      * @return boolean
      */
     public static function checkhour($hour, $minute, $second) {
@@ -86,9 +87,9 @@ class DateHour extends DateTime {
      * </code>
      * </pre>
      * 
-     * @access static
      * @param int $dayToSum Number of days useful
      * @param string $date Date for increment
+     * 
      * @throws Exception First parameter must be an integer and positive', 
      * @return Object DateTime
      */
@@ -118,8 +119,8 @@ class DateHour extends DateTime {
      * </code>
      * </pre>
      * 
-     * @access static
      * @param int $year Year current
+     * 
      * @throws Exception First parameter must be an integer and positive', 
      * @return array Array of recess
      */

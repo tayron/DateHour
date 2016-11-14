@@ -1,0 +1,22 @@
+{
+    "name": "tayron/datehour",
+    "description": "Classe que adiciona mais funcionalidades a classe DateTime para tratamento de data e hora",
+    "version": "1.0",
+    "type": "classe-utilitaria",
+    "homepage": "https://github.com/tayron/datehour",
+    "authors": [
+        {
+            "name": "Tayron Miranda",
+            "email": "dev@tayron.com.br"
+        }
+    ],    
+    "require": {
+        "php": ">=5.3"       
+    },
+    "autoload": {
+        "psr-4": {
+            "Tayron\\": "\\"
+        }
+    }      
+
+}
