@@ -1,6 +1,7 @@
 # DateHour#
 
-Classe que faz tratamento em data e hora.
+Classe que adiciona mais funcionalidades a classe DateTime para tratamento de data e hora.
+
 
 ### Recursos implementados ###
 
