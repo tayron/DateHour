@@ -16,7 +16,7 @@ Classe que adiciona mais funcionalidades a classe DateTime para tratamento de da
 ```sh
     "require": {
         ...
-        "tayron/datehour" : "dev-master"
+        "tayron/datehour" : "1.0.0"
         ... 
     },    
 ```
