@@ -1,4 +1,4 @@
-## DateHour 1.0
+## DateHour
 
 Classe que adiciona mais funcionalidades a classe DateTime para tratamento de data e hora.
 
@@ -9,6 +9,17 @@ Classe que adiciona mais funcionalidades a classe DateTime para tratamento de da
   - checkhour($hour, $minute, $second) - Verifica se uma hora é válida
   - sumDayUseful($dayToSum, $date) - Soma uma quantidade de dias a uma data
   - getRecess($year) - Retorna uma lista de recessos de um determinado ano
+
+
+## Utilização via composer
+
+```sh
+    "require": {
+        ...
+        "tayron/datehour" : "dev-master"
+        ... 
+    },    
+```
 
 
 ## Tutorial
